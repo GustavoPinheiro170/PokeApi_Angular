@@ -13,6 +13,7 @@ import {MatListModule} from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
 import {MatSelectModule} from '@angular/material/select';
 import { MatButtonModule} from '@angular/material/button';
+import { MatProgressBarModule} from '@angular/material/progress-bar';
 
 import { HttpClientModule} from '@angular/common/http';
 import { PokemonDetailsAbilitiesComponent } from './components/main/pokemon-details-abilities/pokemon-details-abilities.component';
@@ -39,6 +40,7 @@ import { FormsModule } from '@angular/forms';
     HttpClientModule,
     FormsModule,
     MatButtonModule,
+    MatProgressBarModule,
     BrowserAnimationsModule,
     
   ],

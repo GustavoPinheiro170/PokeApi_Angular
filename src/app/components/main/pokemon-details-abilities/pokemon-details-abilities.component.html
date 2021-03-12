@@ -11,6 +11,7 @@
         </mat-select>
       </mat-form-field>
 
+      <mat-progress-bar *ngIf='stateProgress' mode="determinate" [value]="progress"></mat-progress-bar>
     <div *ngIf='state' class='info-effect'>
         <p>{{ Ability }}</p>
     </div>

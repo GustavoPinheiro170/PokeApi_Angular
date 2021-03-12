@@ -7,3 +7,26 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+@keyframes animeLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(50px, -50px, -50px);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0px, 0px);
+    }
+}
+
+@keyframes animeRight {
+    from {
+        opacity: 0;
+        transform: translate(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0px, 0px);
+    }
+}

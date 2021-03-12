@@ -9,12 +9,16 @@ import { MainComponent } from '../main.component';
 export class PokemonDetailsAbilitiesComponent implements OnInit {
 
   @Input() pokemon: any;
-   
+
   @Input() Ability: any;
 
   @Input() state: any;
 
   handleEvent: any;
+
+  stateProgress: boolean = false;
+
+  progress: number = 40;
 
   selectedInfo: string = 'Choose Ability';
 
@@ -27,6 +31,18 @@ export class PokemonDetailsAbilitiesComponent implements OnInit {
   }
 
   handlerEvt(event: any) {
-     this.handleEvent =  this.handle.handleEffect(event)
-  } 
+    this.progressTime()
+    this.handleEvent = this.handle.handleEffect(event)
+  }
+
+  progressTime() {
+    this.stateProgress = true
+    setTimeout(() => {
+      this.progress = 90
+    }, 500)
+    setTimeout(() => {
+      this.stateProgress = false
+      this.progress = 40
+    }, 1000)
+  }
 }
