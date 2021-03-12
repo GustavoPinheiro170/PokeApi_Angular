@@ -1,0 +1,19 @@
+<div class='abilities'>
+
+    <h3> Abilities </h3>
+    <mat-form-field appearance="fill">
+        <mat-label>Abilities</mat-label>
+        <mat-select [(ngModel)]="selectedInfo" (ngModelChange)="handlerEvt($event)">
+            <mat-option [value]='selectedInfo'>Choose Abillity </mat-option>
+            <mat-option *ngFor='let any of pokemon' [value]='any.ability.url'>
+            {{any.ability.name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+    <div *ngIf='state' class='info-effect'>
+        <p>{{ Ability }}</p>
+    </div>
+
+
+</div>

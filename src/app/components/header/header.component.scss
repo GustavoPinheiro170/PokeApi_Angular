@@ -1,0 +1,21 @@
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: #ef5350;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    .logo {
+        img {
+            width: 250px;
+            padding: 10px;
+        }
+    }
+    form {
+        margin-right: 20%;
+    }
+    input {
+        width: 500px;
+    }
+    
+}

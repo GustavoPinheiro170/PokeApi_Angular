@@ -1,0 +1,99 @@
+.card-pokemons {
+    margin-top: 5%;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    position: relative;
+    .card-item {
+        box-shadow: 0px 5px 10px gray;
+        width: 300px;
+        text-align: center;
+        justify-content: center;
+        border-radius: 5px;
+        padding: 10px;
+        margin-left: 10px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+         p {
+         margin-bottom: 10px;
+         }
+    }
+}
+.image-pokemon {
+    position: absolute;
+    top: 20px;
+    left: 27px;
+}
+.info-pokemons {
+    width: 80%;
+}
+
+.mat-list-base .mat-list-item, .mat-list-base .mat-list-option {
+    display: flex;
+    height: 48px;
+    -webkit-tap-highlight-color: transparent;
+    width: 150px;
+    padding: 0;
+}
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-pokemons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    p {
+        margin: 10px;
+    }
+
+}
+
+.paginator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button {
+        text-align: center;
+        margin: 20px;
+        font-size: 15px;
+        overflow: hidden;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    input {
+        width: 50px;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    .card-pokemons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        p {
+            margin: 10px;
+        }
+    }
+    .options {
+        width: 100%;
+    }
+    
+}

@@ -1,0 +1,26 @@
+<mat-card class='card-pokemons'>
+    <img *ngIf='isImage' class='image-pokemon' src='{{ ImageURL }}' width="25%" />
+    <img *ngIf='!isImage' src='../../../assets/logo.png' width="80%" />
+
+    <section class='info-pokemons'>      
+        <app-pokemon-details-abilities
+         *ngIf='isImage'  
+         [pokemon]='anyInformation'
+         [Ability]='abilitys'
+         [state]='effect'
+         ></app-pokemon-details-abilities>
+   
+    </section>
+</mat-card>
+
+<mat-list role="list" class='options'>
+    <mat-list-item class='list-item' *ngFor="let pokemon of ArrayPokemons" role="listitem" (click)='infoPokemon(pokemon.url)'>
+        <button mat-button color="accent" >{{pokemon.name}} </button>
+    </mat-list-item>
+</mat-list>
+
+<section class='paginator'>
+    <button mat-button  (click)='previusPage()'> < Previus </button>
+    <input  [(ngModel)]='offset' placeholder="{{ offset}}" disabled>
+    <button mat-button  (click)='nextPage()' > Next > </button>
+</section>
